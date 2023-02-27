@@ -1,0 +1,347 @@
+
+/* CSS reset, dit niet aanpassen! */
+
+html {
+  box-sizing: border-box;
+  
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Hieronder mag je eigen CSS code */
+
+/*Hier zet ik de css code voor de website*/
+body{
+  display: grid;
+  grid-template-columns: 30vw 70vw;
+  grid-template-rows: auto auto auto auto;
+  font-family:'Times New Roman', Times, serif;
+  background-color: yellow;}
+
+
+  
+    
+#header{
+
+  background-color: rgb(253, 124, 3);
+  text-align: center;
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+ 
+  color: white;
+  width: 100vw;
+
+}
+p{
+  font-size: 1.3rem;
+}
+
+
+h1{
+ 
+  padding-top:35px;
+  
+
+}
+h3{
+
+  padding-top: 35px;
+}
+h5{
+  
+  padding-top: 10px;
+  padding-bottom: 28px;
+}
+#navigatie{
+  
+  width: 100vw;
+  background-color: rgb(204, 102, 7);
+  padding: 2px;
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+
+  
+  
+  
+  
+
+  margin-bottom: 2px;
+}
+nav {
+  
+  display: flex;
+  display:inline-block;
+  
+  
+  
+
+  
+  
+}
+nav ul li{
+  list-style-type: none;
+  display:inline-block;
+  
+  
+  padding: 3px 3px ;
+  
+
+}
+nav ul li a{
+  color: white;
+  text-decoration: none;
+  padding-right: 5px;
+  font-size: 1.1rem;
+}
+nav ul li a:hover{
+  color: 	#00FFFF;
+  transition: 0.3s;
+}
+nav ul li a:active{
+  color: #9F2B68;
+  transition: 0.3s;
+}
+#bottom{
+
+  grid-column: 1 / 3;
+  grid-row: 4 / 5;
+  background-color: rgb(253, 124, 3);
+  text-align: center;
+}           
+
+
+#home-links{
+  
+  
+
+  
+  grid-column: 1/ 2;
+  grid-row: 3 / 4;
+  background-color:rgb(255, 217, 192) ;
+ 
+  padding-left: 26px;
+  padding-right: 25px;
+
+}
+#home-rechts{
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+  padding-left: 20px;
+  padding-right:62px;
+  
+  padding-bottom: 20px;
+  background-color: #FFFFFF;
+
+
+}
+
+  
+
+
+.muziek-1{
+  padding-bottom: 10px;
+}
+.muziek-2{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.saxofoon{
+  width: 28vw;
+  padding-top: 45px;
+  padding-bottom: 15px;
+  text-align: center;
+  
+ 
+  
+}
+.muziek-3{
+  color: rgb(204, 102, 7);
+  
+  padding-top: 35px;
+  padding-bottom: 10px;
+}
+.muziek-4{
+
+  
+  padding-right: 15px;
+  text-size-adjust: strong;
+
+}
+.trompet{
+  width: 40vw;
+  padding-top: 15px;
+  padding-left: 25px;
+  padding-bottom: 25px;
+  max-width: 400px;
+  
+  
+}
+.saxofoon-2{
+  width: 40vw;
+  padding-top: 15px;
+  padding-left: 25px;
+  padding-bottom: 15px;
+  max-width: 400px;
+
+  
+}
+.kind{
+  width: 27vw;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-bottom: 15px;
+  
+  text-align: center;
+ 
+  
+
+}
+.hannah{
+  float: right;
+  width:25vw;
+  padding-top: 30px;
+  
+}
+.jesse{
+  float:left;
+  width: 25vw;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.onder{
+  padding-bottom: 60px;
+}
+.googlemaps{
+  
+  width: 25vw;
+  padding-bottom: 5px;
+}
+
+
+
+.label{
+  padding-bottom: 4px;
+}
+.button-1{
+  background-color:rgb(204, 102, 7);
+  color: #FFFFFF;
+  padding: 5px;
+  border: none;
+}
+textarea {
+  width: 60vw;
+  min-height: 100px;
+  padding: 5px;
+  
+  
+  
+}
+input{
+  width: 60vw;
+  padding: 5px;
+}
+select{
+  width: 60vw;
+  padding: 5px;
+  
+  
+}
+#space-1{
+  padding-bottom: 10px;
+}
+
+/*Hier onder staat de css code voor op een smartphone*/
+
+@media only screen and (max-width:768px) {
+  body{
+    
+    
+    grid-template-columns: 100vw;
+    grid-template-rows: auto auto auto auto auto;
+    
+  }
+  #header{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  nav{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    list-style-type: none;
+    display:flex;
+    flex-direction: column;
+   
+    text-align: center;
+    
+    justify-content: center;
+   
+    
+  }
+  nav ul li{
+    list-style-type: none;
+    display:flex;
+    justify-content: center;
+    
+    
+  }
+  #home-links{
+  
+  
+
+  
+    grid-column: 1/ 2;
+    grid-row: 3 / 4;
+    
+  }
+  #home-rechts{
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    
+    
+  
+  }
+  #bottom{
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+  }
+  .saxofoon{
+    width: 80vw;
+  }
+  .kind{
+    width: 80vw;
+  }
+  .googlemaps{
+  
+    width: 80vw;
+    padding-bottom: 5px;
+  }
+  textarea {
+    width: 90vw;
+    
+    
+    
+    
+    
+  }
+  input{
+    width: 90vw;
+    
+  }
+  select{
+    width: 90vw;
+  }
+    
+  
+
+  
+}
